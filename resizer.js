@@ -1,0 +1,1 @@
+ome.tabs.executeScript(integer tabId, tabs.InjectDetails details, function callback)

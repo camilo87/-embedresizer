@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "Embed Resizer",
+	"Author": "Camilo Oliveira",
+	"version": "0.1",
+	"description": "Resizes Youtube embedded videos",
+	"default_locale": "en",
+	"page_action": {
+		"default_icon": "icon.png"
+	}
+	// "background": {
+	// 	"scripts": ["resizer.js"],
+	// 	"persistent": false
+	// },
+	"content_scripts": [
+		{
+			"matches": ["http://www.youtube.com/*"],
+			"css": ["style.css"],
+			"js": ["jquery.js", "myscript.js"]
+		}
+	],
+	"permissions": [
+		"http://*/"
+		"activeTab"
+	],
+}
